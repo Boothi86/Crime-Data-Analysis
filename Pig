@@ -1,0 +1,33 @@
+Solution Extraction Using PIG
+
+1.Loadig Data to a variable:
+Crime = Load ‘user/input/CRIME3.csv’ USING PigStorage(‘,’) as (inc_no:int,offense:int,offense_code:chararray,off_descript:chararray,district:int,reporting_area:int,occurance_date:datetime,year:int,month:int,day:chararray, hour:int,street:chararray);
+From this we can load the dataset to a particular variable by giving the correct path of the input file location and after finding the file location we save the data based on the structure we provide.
+
+2.Describing the dataset loaded:(Structure)
+	a = describe crime;
+	From this query we can able to see the structure of the dataset and their respective datatypes.
+
+3.Setting limit to print or to display the dataset:
+a = LIMIT crime 5;
+From this we can able to print the first 5 rows of the dataset by providing the limit.
+
+4. Displaying the dataset:
+		dump a;
+This query is able to provide or to display the data. 
+
+5. Displaying the Offences:
+
+6.Displaying the occurrence of offences
+
+7. Displaying the Occurrence of crime-fraud
+
+8.Displaying the crimes in D4 district
+
+9. Illustrate command
+
+10.Distinct
+
+11.Explain
+
+
